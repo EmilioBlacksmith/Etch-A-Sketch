@@ -1,3 +1,11 @@
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container{
     border-style: solid;
     height: 500px;
@@ -6,6 +14,7 @@
     justify-content: space-between;
     flex-direction: column;
     gap: 0;
+    background-color: white;
 }
 
 .container .containerbaby{
@@ -17,10 +26,8 @@
 }
 
 .container .containerbaby .box{
-    border-style: solid;
     flex-grow: 1;
     flex-flow: row;
-    border-color: grey;
-    opacity: 25%;
     border-width: thin;
+    border: 1px solid rgba(0, 0, 0, .05);
 }

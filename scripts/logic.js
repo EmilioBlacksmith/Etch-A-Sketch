@@ -1,3 +1,5 @@
+let color = '#000000';
+
 const sketchContainer = document.querySelector('.container');
 
 for(let i = 0; i < 16; i++){
@@ -10,3 +12,11 @@ for(let i = 0; i < 16; i++){
     }
     sketchContainer.appendChild(column);
 }
+
+const drawingBoxes = document.querySelectorAll('.box');
+
+drawingBoxes.forEach(function(drawingBox){
+    drawingBox.addEventListener('mouseover', function handleMouseOver(){
+        drawingBox.style.backgroundColor = color;
+    });
+});
