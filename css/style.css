@@ -1,0 +1,26 @@
+.container{
+    border-style: solid;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0;
+}
+
+.container .containerbaby{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.container .containerbaby .box{
+    border-style: solid;
+    flex-grow: 1;
+    flex-flow: row;
+    border-color: grey;
+    opacity: 25%;
+    border-width: thin;
+}
