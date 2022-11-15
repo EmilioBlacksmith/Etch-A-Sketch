@@ -1,5 +1,13 @@
 let color = '#000000';
 
+var mouseDown = false;
+document.body.onmousedown = function() { 
+  mouseDown = true;
+}
+document.body.onmouseup = function() {
+  mouseDown = false;
+}
+
 const sketchContainer = document.querySelector('.container');
 
 for(let i = 0; i < 16; i++){
@@ -17,6 +25,12 @@ const drawingBoxes = document.querySelectorAll('.box');
 
 drawingBoxes.forEach(function(drawingBox){
     drawingBox.addEventListener('mouseover', function handleMouseOver(){
+        if(mouseDown){
+            drawingBox.style.backgroundColor = color;
+        }
+    });
+
+    drawingBox.addEventListener('mousedown',function handleMouseClick(){
         drawingBox.style.backgroundColor = color;
     });
 });
@@ -30,4 +44,8 @@ function ClearCanvas(){
 function randomColor(){
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
     color = '#' + randomColor;
+}
+
+function Eraser(){
+    color = '#ffffff'
 }

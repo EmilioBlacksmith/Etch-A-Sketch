@@ -1,5 +1,6 @@
 html{
-    background-color: #D10000;
+    background-color: #e2e2e2;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .wrapper{
@@ -12,7 +13,6 @@ html{
 }
 
 .container{
-    border-style: solid;
     height: 600px;
     width: 600px;
     display: flex;
@@ -20,6 +20,7 @@ html{
     flex-direction: column;
     gap: 0;
     background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .container .containerbaby{
@@ -36,3 +37,4 @@ html{
     border-width: thin;
     border: 1px solid rgba(0, 0, 0, .05);
 }
+
