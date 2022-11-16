@@ -15,7 +15,16 @@
     <div class="wrapper">
         <h1>ETCH-A-SKETCH</h1>
         <button onclick="ClearCanvas()">clear canvas</button>
-        <button onclick="Eraser()">eraser</button>
+        <button onclick="Eraser()">toggle eraser</button>
+        <button onclick="RainbowActive()">toggle rainbow dash</button>
+        <div class="currentColor">
+            <div class="color-picker"></div>
+        </div>
+        <div class="range-slider">
+            canvas size
+            <input type="range" value="16" min="1" max="100" oninput="this.nextElementSibling.value = this.value + 'x' + this.value" class="canvas-size">
+            <output>16x16</output>
+        </div>
         <div class="container">
         </div>
     </div>
