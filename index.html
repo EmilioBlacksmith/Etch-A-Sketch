@@ -13,24 +13,28 @@
 </head>
 <body>
     <div class="wrapper">
-        <h1>ETCH-A-SKETCH</h1>
-        <button onclick="ClearCanvas()">clear canvas</button>
-        <button onclick="Eraser()">toggle eraser</button>
-        <button onclick="RainbowActive()">toggle rainbow dash</button>
-        <div class="currentColor">
-            <div class="color-picker"></div>
-        </div>
-        <div class="range-slider">
-            canvas size
-            <input type="range" value="16" min="1" max="100" oninput="this.nextElementSibling.value = this.value + 'x' + this.value" class="canvas-size">
-            <output>16x16</output>
+        <h1><a href="index.html">ETCH-A-SKETCH</a></h1>
+        <div class="tool-pallete">
+            <div class="button-area">
+                <button onclick="ClearCanvas()">clear canvas</button>
+                <button onclick="Eraser()">toggle eraser</button>
+                <button onclick="RainbowActive()">toggle rainbow</button>
+            </div>
+            <div class="currentColor">
+                <div class="color-picker"></div>
+            </div>
+            <div class="range-slider">
+                CANVAS SIZE
+                <input type="range" value="16" min="1" max="128" oninput="this.nextElementSibling.value = this.value + 'x' + this.value" class="canvas-size">
+                <output>16x16</output>
+            </div>
         </div>
         <div class="container">
         </div>
+        <footer>
+            Made by <a href="https://github.com/EmilioBlacksmith"><b>Emilio Blacksmith</b>. <img src="../imgs/GitHub-Mark-32px.png" height="16px"/></a>
+        </footer>
     </div>
-    <footer>
-        Made by Emilio Blacksmith.
-    </footer>
     <script src="scripts/logic.js"></script>
 </body>
 </html>
