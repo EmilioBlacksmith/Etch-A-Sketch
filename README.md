@@ -9,7 +9,7 @@ This is a Vanilla Javascript Project to simulate a pixel art sketching web progr
 - Activate or deactivate Rainbow Mode (random colors when painting)
 - Clear the CANVAS when needed.
 
-![teaser-etchasketch](https://user-images.githubusercontent.com/71019624/202525687-6f1695cb-549c-4ff9-a7ef-2542a416e106.gif)
+![preview](https://github.com/EmilioBlacksmith/Etch-A-Sketch/assets/71019624/5ccbe4ee-967b-4cdd-85ed-be57df839aca)
 
 ## Tools Used.
 <p>
