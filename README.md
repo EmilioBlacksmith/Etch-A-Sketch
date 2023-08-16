@@ -1,10 +1,8 @@
-# Etch-A-Sketch
-
 <a href="https://emilioblacksmith.github.io/Etch-A-Sketch/"><img src="https://img.shields.io/website-up-down-green-red/http/emilioblacksmith.github.io/Etch-A-Sketch/" /></a>
 
-[^ You can test this website ^]
+# Etch-A-Sketch
 
-This is a Vanilla Javascript Project to simulate a pixel art sketching web program, with different features:
+This is a Vanilla Javascript Project to simulate a pixel art sketching web program based on Etch a Sketch, with different features:
 
 - Change CANVAS SIZE with different pixel dimensions
 - Activate or deactivate an Eraser
